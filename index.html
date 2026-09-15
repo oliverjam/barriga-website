@@ -28,7 +28,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                gap: 2rem;
                 font-family: "Jost", system-ui;
                 font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
             }
@@ -39,7 +38,6 @@
             }
             h1 {
                 font-family: "League Spartan";
-                font-size: clamp(3rem, 3rem + 10vw, 14rem);
                 text-box: trim-both cap alphabetic;
                 line-height: 0.84;
 
@@ -76,13 +74,19 @@
                 }
             }
             svg {
+                margin-block-start: 2rem;
+                margin-block-end: 1rem;
                 inline-size: 100%;
                 max-inline-size: 30rem;
                 height: auto;
                 display: block;
                 margin-inline: auto;
             }
+            time {
+                margin-block-start: 1rem;
+            }
             a {
+                margin-block-start: 2rem;
                 color: inherit;
                 text-decoration-thickness: 2px;
             }
@@ -100,7 +104,10 @@
             <span class="container"><span>BARRIGA</span></span>
             <span class="ref" aria-hidden="true">BARRIGA</span>
         </h1>
-        <time datetime="2026-10-14">Wednesday 14 October</time>
+        <div>
+            <time datetime="2026-10-14">Wednesday 14 October</time>
+            <p>83 Dalston Lane, E8 2NG</p>
+        </div>
         <svg
             alt="An abstract swirl of lines appears to resolve itself as a bowl of food. A fork is lifting some of the food up and letting it spill playfully back down."
             viewBox="-2.7 -2.3 448.1 423.1"
