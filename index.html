@@ -91,6 +91,7 @@
                 margin-inline: auto;
             }
             time {
+                display: block;
                 margin-block-start: 1rem;
             }
             a {
@@ -102,6 +103,7 @@
                 }
             }
             .book {
+                display: block;
                 margin-block-start: 2rem;
                 text-decoration-line: underline;
                 text-decoration-thickness: 2px;
@@ -114,20 +116,21 @@
                 letter-spacing: 4px;
             }
             .insta {
-                position: fixed;
-                bottom: 1rem;
-                right: 1rem;
-                display: flex;
-                gap: 0.5ch;
-                align-items: center;
+                display: block;
+                text-align: right;
+                font-size: 14px;
+                margin-block-start: 2rem;
+                margin-inline-end: 1rem;
             }
         </style>
     </head>
     <body>
-        <h1>
-            <span class="container"><span>BARRIGA</span></span>
-            <span class="ref" aria-hidden="true">BARRIGA</span>
-        </h1>
+        <header>
+            <h1>
+                <span class="container"><span>BARRIGA</span></span>
+                <span class="ref" aria-hidden="true">BARRIGA</span>
+            </h1>
+        </header>
         <div>
             <time datetime="2026-10-14">Wednesday 14 October</time>
             <p>83 Dalston Lane, E8 2NG</p>
