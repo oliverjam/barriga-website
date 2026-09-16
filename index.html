@@ -86,16 +86,32 @@
                 margin-block-start: 1rem;
             }
             a {
-                margin-block-start: 2rem;
                 color: inherit;
+                text-decoration-line: none;
+                font-size: 1rem;
+                &:hover {
+                    text-decoration-line: underline;
+                }
+            }
+            .book {
+                margin-block-start: 2rem;
+                text-decoration-line: underline;
                 text-decoration-thickness: 2px;
             }
             time,
-            a {
+            .book {
                 font-family: "Just Another Hand";
                 font-size: clamp(1.5rem, 1.5rem + 1vw, 4rem);
                 text-transform: uppercase;
                 letter-spacing: 4px;
+            }
+            .insta {
+                position: fixed;
+                bottom: 1rem;
+                right: 1rem;
+                display: flex;
+                gap: 0.5ch;
+                align-items: center;
             }
         </style>
     </head>
@@ -123,8 +139,20 @@
             <p>3 courses + snack on arrival, £45</p>
             <p>caipirinhas + wine priced individually</p>
         </div>
-        <a href="https://forms.gle/Nw6HxKDBTkv7U9rT8" target="_blank">
+        <a
+            class="book"
+            href="https://forms.gle/Nw6HxKDBTkv7U9rT8"
+            target="_blank"
+        >
             Click here to book
+        </a>
+        <a class="insta" href="https://www.instagram.com/barrigafood/">
+            <img
+                src="insta.png"
+                src="instagram logo"
+                width="20"
+                height="20"
+            />barrigafood
         </a>
     </body>
 </html>
